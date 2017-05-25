@@ -1,0 +1,15 @@
+{
+  "name": "test-mysql",
+  "version": "1.0.0",
+  "description": "testing crud",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Borja Güiles",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.8.0",
+    "mysql": "^2.13.0"
+  }
+}

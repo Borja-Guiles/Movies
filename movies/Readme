@@ -1,0 +1,29 @@
+MySQL Database Script
+
+CREATE SCHEMA mysqldb;
+USE mysqldb;
+CREATE TABLE mysqldb.movies (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(245) NULL,
+  `description` VARCHAR(745) NULL,
+  `rating` smallint NULL,
+  `release` date NULL,
+  PRIMARY KEY (`id`));
+
+Launch:
+
+    node app.js
+
+Insert movie:
+
+    node app -action insert -title "Toy Story" -description "Andys toys begin a journey." -rating 4 -r
+elease "1993-01-01"
+
+Update movie:
+
+    node app -action update -id 1 -title "Toy Story 3" -description "Andys toys end a journey." -rating 5 -r
+    elease "2010-01-01"
+
+Delete movie:
+
+    node app -action delete -id 1
